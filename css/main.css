@@ -5,7 +5,7 @@
 }
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 html {
   font-size: 100%;
 } /*16px*/
@@ -42,8 +42,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto', sans-serif;
-  --bodyFont: 'Nunito', sans-serif;
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
@@ -70,6 +70,11 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: var(--textColor);
+}
+
+body::-webkit-scrollbar {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  display: none;
 }
 
 p {
@@ -260,20 +265,20 @@ Navbar
 ===============
 */
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav-center{
+.nav-center {
   /* border: 1px solid black; */
   width: 90vw;
   max-width: var(--max-width);
   /* margin: 0 auto; */
 }
 
-.nav-header{
+.nav-header {
   /* border: 1px solid red; */
   height: 6rem;
   display: flex;
@@ -281,19 +286,19 @@ Navbar
   align-items: center;
 }
 
-.nav-header img{
+.nav-header img {
   width: 200px;
 }
 
-.nav-btn{
+.nav-btn {
   padding: 0.25rem 0.75rem;
 }
 
-.nav-btn i{
+.nav-btn i {
   font-size: 1.25rem;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   flex-direction: column;
   /* justify-content: center;
@@ -304,11 +309,11 @@ Navbar
   transition: var(--transition);
 }
 
-.show-links{
+.show-links {
   height: 310px;
 }
 
-.nav-link{
+.nav-link {
   display: block;
   text-align: center;
   text-transform: capitalize;
@@ -320,57 +325,55 @@ Navbar
   font-weight: 500;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--primary-500);
 }
 
-.contact-link a{
+.contact-link a {
   padding: 0.15rem 1rem;
 }
 
 /* for large screen */
 
 @media screen and (min-width: 992px) {
-  .nav-btn{
+  .nav-btn {
     display: none;
   }
-  .navbar{
+  .navbar {
     height: 6rem;
-   }
-  .nav-center{
+  }
+  .nav-center {
     display: flex;
     align-items: center;
   }
-  .nav-header{
+  .nav-header {
     height: auto;
     margin-right: 2rem;
   }
-  .nav-links{
+  .nav-links {
     height: auto;
     flex-direction: row;
     align-items: center;
     width: 100%;
-    }
-  .nav-link{
+  }
+  .nav-link {
     padding: 0;
     border-top: none;
     margin-right: 1rem;
     font-size: 1rem;
   }
-  .contact-link{
+  .contact-link {
     margin-left: auto;
     margin-right: 0;
   }
 }
-
-
 
 /*
 =============== 
 Page
 ===============
 */
-.page{
+.page {
   width: 90vw;
   max-width: var(--max-width);
   /* border: 1px solid blue; */
@@ -379,18 +382,13 @@ Page
   min-height: calc(100vh - (6rem + 4rem));
 }
 
-
-
-
-
-
 /*
 =============== 
 Footer
 ===============
 */
 
-.page-footer{
+.page-footer {
   height: 4rem;
   /* border: 1px solid red; */
   /* text-align: center; */
@@ -401,19 +399,14 @@ Footer
   align-items: center;
 }
 
-.page-footer p{
+.page-footer p {
   margin-bottom: 0;
 }
 
-.footer-logo, .page-footer a{
+.footer-logo,
+.page-footer a {
   color: var(--primary-500);
 }
-
-
-
-
-
-
 
 /*
 =============== 
@@ -421,7 +414,7 @@ main-page (header)
 ===============
 */
 
-.hero{
+.hero {
   height: 40vh;
   /* border: 1px solid red; */
   background: url(../assets/main.jpeg) center/cover no-repeat;
@@ -430,7 +423,7 @@ main-page (header)
   position: relative;
 }
 
-.hero-container{
+.hero-container {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -442,20 +435,17 @@ main-page (header)
   align-items: center;
 }
 
-.hero-text{
+.hero-text {
   color: var(--white);
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-text h1{
+  .hero-text h1 {
     font-size: 4rem;
     margin-bottom: 0;
   }
 }
-
-
-
 
 /*
 =============== 
@@ -465,12 +455,12 @@ main-page (recipe-container)
 
 /* tags-container */
 
-.recipes-container{
+.recipes-container {
   display: grid;
   gap: 2rem 1rem;
 }
 
-.tags-container{
+.tags-container {
   /* border: 1px solid red; */
   order: 1;
   display: flex;
@@ -478,17 +468,17 @@ main-page (recipe-container)
   padding-bottom: 2rem;
 }
 
-.tags-container h4{
+.tags-container h4 {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
-.tags-list{
+.tags-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.tags-list a{
+.tags-list a {
   text-transform: capitalize;
   /* border: 1px solid black; */
   display: block;
@@ -496,45 +486,43 @@ main-page (recipe-container)
   transition: var(--transition);
 }
 
-.tags-list a:hover{
+.tags-list a:hover {
   color: var(--primary-500);
 }
 
 /* end of tags-container */
 
-
 /* recipes-lists */
 
-.recipes-list{
+.recipes-list {
   display: grid;
   gap: 2rem 1rem;
   padding-bottom: 3rem;
   /* border: 1px solid red; */
 }
 
-.recipe{
+.recipe {
   display: block;
 }
 
-.recipe-img{
+.recipe-img {
   height: 15rem;
   border-radius: var(--borderRadius);
   margin-bottom: 1rem;
 }
 
-.recipes-list h5{
+.recipes-list h5 {
   color: var(--grey-700);
   margin-bottom: 0;
   line-height: 1;
 }
 
-.recipes-list p{
+.recipes-list p {
   margin-bottom: 0;
   line-height: 1;
   margin-top: 0.5rem;
   color: var(--grey-500);
 }
-
 
 /*
 =============== 
@@ -543,43 +531,50 @@ main-page (recipe-container) for different @media queries
 */
 
 @media screen and (min-width: 576px) {
-
-  .recipes-list{
+  .recipes-list {
     grid-template-columns: 1fr 1fr;
   }
-  .recipe-img{
+  .recipe-img {
     height: 10rem;
   }
-  
 }
-
 
 @media screen and (min-width: 992px) {
-
-  .recipes-container{
+  .recipes-container {
     grid-template-columns: 200px 1fr;
   }
-  .recipe p{
+  .recipe p {
     font-size: 0.85rem;
   }
-  .tags-container{
+  .tags-container {
     order: 0;
   }
-  .tags-list{
+  .tags-list {
     grid-template-columns: 1fr;
   }
-
 }
-
 
 @media screen and (min-width: 1200px) {
-
-  .recipes-list{
+  .recipes-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .recipe h5{
+  .recipe h5 {
     font-size: 1.15rem;
   }
-
 }
 
+/*
+=============== 
+404-page Error page
+===============
+*/
+
+.error-page {
+  text-align: center;
+  /* border: 1px solid red; */
+  padding-top: 5rem;
+}
+
+.error-page h1 {
+  font-size: 10rem;
+}
