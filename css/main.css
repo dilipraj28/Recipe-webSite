@@ -543,14 +543,19 @@ main-page (recipe-container) for different @media queries
 */
 
 @media screen and (min-width: 576px) {
+
   .recipes-list{
     grid-template-columns: 1fr 1fr;
   }
   .recipe-img{
     height: 10rem;
   }
+  
 }
+
+
 @media screen and (min-width: 992px) {
+
   .recipes-container{
     grid-template-columns: 200px 1fr;
   }
@@ -563,13 +568,18 @@ main-page (recipe-container) for different @media queries
   .tags-list{
     grid-template-columns: 1fr;
   }
+
 }
+
+
 @media screen and (min-width: 1200px) {
+
   .recipes-list{
     grid-template-columns: 1fr 1fr 1fr;
   }
   .recipe h5{
     font-size: 1.15rem;
   }
+
 }
 
