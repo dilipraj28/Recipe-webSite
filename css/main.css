@@ -648,6 +648,51 @@ contact page
 
 /*
 =============== 
-contact page
+tags page
+===============
+*/
+
+.tags-container{
+  display: grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+.tag{
+  background: var(--grey-500);
+  border-radius: var(--borderRadius);
+  text-align: center;
+  color: var(--white);
+  transition: var(--transition);
+  padding: 0.75rem 0;
+}
+
+.tag:hover{
+  background: var(--primary-500);
+}
+
+.tag h5, .tag p{
+  margin-bottom: 0;
+}
+
+.tag h5{
+  font-weight: 600;
+}
+
+@media screen and (min-width: 576px) {
+  .tags-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tags-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/*
+=============== 
+tags page
 ===============
 */
