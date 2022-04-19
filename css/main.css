@@ -460,7 +460,7 @@ main-page (recipe-container)
   gap: 2rem 1rem;
 }
 
-.tags-container {
+.tags-index-container {
   /* border: 1px solid red; */
   order: 1;
   display: flex;
@@ -474,7 +474,7 @@ main-page (recipe-container)
   padding-bottom: 3rem;
 }
 
-.tags-container h4 {
+.tags-index-container h4 {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
@@ -558,7 +558,7 @@ main-page (recipe-container) for different @media queries
     font-size: 0.85rem;
   }
 
-  .tags-container {
+  .tags-index-container {
     order: 0;
     /* background: blue; */
   }
